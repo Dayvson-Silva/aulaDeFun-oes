@@ -95,16 +95,16 @@
 
 
 
-const filtrarPares = (numeros) => {
-    const pares = []
-    for(num of numeros){
-        if(num % 2 ===0){
-            pares.push(num)
-        }
-    }
-    return pares
-}
-console.log(filtrarPares([1,2,3,4,5,6,7,8,9,10]));
+// const filtrarPares = (numeros) => {
+//     const pares = []
+//     for(num of numeros){
+//         if(num % 2 ===0){
+//             pares.push(num)
+//         }
+//     }
+//     return pares
+// }
+// console.log(filtrarPares([1,2,3,4,5,6,7,8,9,10]));
 
 
 
@@ -113,9 +113,9 @@ console.log(filtrarPares([1,2,3,4,5,6,7,8,9,10]));
 // array de números e retorne a média desses números.
 
 
-const calcularMedia = () =>{
+// const calcularMedia = () =>{
     
-}
+// }
 
 // Praticar o uso de arrow functions com lógica condicional e manipulação de arrays.
 // Objetivo:
@@ -125,3 +125,94 @@ const calcularMedia = () =>{
 // 3 Exiba no console o array filtrado e a média dos números pares.
 
 
+
+// CONTINUAÇÃO DE FUNÇOES CALLBACK
+
+// const numeros = [1,2,3,4,5]
+
+// numeros.forEach((numero, index) => {
+//     console.log(`o elemento no indece ${index} é ${numero}`);
+    
+// })
+
+//  Atividade 01
+// Crie um script que contenha um array com alguns números e utilize o
+// método forEach() para percorrê-lo. Para cada número no array, verifique
+// se ele é positivo, negativo ou zero, e exiba uma mensagem no console
+// indicando o resultado.
+
+
+// const num = [0,1,2,-3,4,-5,6,-45,-23]
+
+// num.forEach((numero ) => {
+//     if(numero > 0){
+//        console.log(`o ${numero} é positivo `);
+       
+//     }else if(numero === 0){
+//         console.log(`o ${numero} é zeroooooooo`);
+        
+//     }else{
+//         console.log(`o ${numero} é negativo`);
+        
+//     }
+ 
+// })
+
+//FUNÇÃO MAP
+
+// const numeros = [1,2,3,4,5,6,7,8,9]
+
+// const quadrados = numeros.map((num) => {
+//     return num * num 
+// })
+
+// console.log(quadrados);
+
+
+// const celsius = [25,30,40]
+
+// const fahremheit = celsius.map((num) => {
+//     let temp =  (num * 9/5) + 32
+//     console.log(
+
+//         ` O numero convertido de celsius ${num}° para fahrenheit é : °f ${temp}`
+//     );
+// })
+
+
+//FUNÇÃO FILTER
+
+// const numeros = [1,2,3,4,5]
+// const pares = numeros.filter(numero => numero % 2 === 1)
+// console.log(pares);
+
+
+// const nomes = ["ana","Bruno","carlos","abacaxi","abelha"]
+// usar o metodo startWith para pegar os nomes que começa com a letra a
+
+// const letraA = nomes.filter( nome => nome.startsWith("a"))
+// console.log(letraA);
+
+
+//FUNÇÃO REDUCE
+
+// const numeros = [1,2,3,4,5]
+
+// const sun = numeros.reduce((acumulador,valor) => {
+//     return acumulador + valor 
+
+// })
+
+// console.log(sun);
+
+// faça a soma de valores
+// const pontos = [8.9,10,4.5,8,7.5]
+// const soma = pontos.reduce((acc, valor) => {
+//     return acc + valor
+// })
+// console.log(`A soma de todos os pontos é ${soma} `);
+
+// // usando if ternario           se o valor for maior que acc print valor se nao acc
+// const maiorNum = pontos.reduce((acc, valor) => valor > acc ? valor : acc )
+
+// console.log(`A maior nota é ${maiorNum}`);

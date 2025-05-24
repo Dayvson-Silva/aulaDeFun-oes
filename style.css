@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(30, 255, 0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+
+  gap: 50px;
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgb(233, 229, 5),
+    rgb(203, 207, 224),
+    rgb(22, 18, 248)
+  );
+}
+
+form div input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: greenyellow;
+  transition: 0.8s;
+}
+
+.showModal{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.showModal .showInfo{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+
+    & p {
+        font-family: 'Courier New', Courier, monospace;
+        font: 800;
+    }
+}
+
+.showModal #close{
+    position: absolute;
+    top: 90%;
+    background-color: aqua;
+}

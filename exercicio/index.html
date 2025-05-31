@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processodor de Dados de Vendas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Processador de Dados de Vendas</h1>
+    <form action="enviar">
+      <input
+        type="number"
+        id="number"
+        placeholder="Selecione o ID do Produto"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="cardShow">
+      
+    </div>
+    
+    <select name="selecao" id="selecao">
+        <option value="Eletrônicos">Eletrônicos</option>
+        <option value="Periféricos">Periféricos</option>
+        <option value="Móveis">Móveis</option>
+        <option value="Armazenamento">Armazenamento</option>
+        <option value="Escritório">Escritório</option>
+        <option value="Acessórios">Acessórios</option>
+        <option value="Componentes">Componentes</option>
+        <option value="Redes">Redes</option>
+        
+    </select>
+    <div class="card">
+    </div>
+</body>
+</html>

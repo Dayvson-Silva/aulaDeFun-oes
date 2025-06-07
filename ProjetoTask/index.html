@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task manager</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="task">
+      <img src="./image/images-removebg-preview.png" alt="" />
+      <h1>Task manager</h1>
+      <h3 id="slogan">Organize your Studies</h3>
+
+      <form action="" method="post">
+        <input type="text" name="task" id="task" placeholder="Add a new Study"/>
+        <button type="submit" id="add">Add</button>
+      </form>
+      <span>No Tasks Added</span>
+      <p>Total Tasks</p>
+      <div class="task-list">
+        <ul>
+          <li class="task-item">
+            <input type="checkbox" name="task-item" id="task-item" />
+            <span>To study</span>
+            <button class="delete"><i class="fi-bs-trash"></i></button>
+         </li>
+        </ul>
+        </div>
+    </div>
+  </body>
+</html>
